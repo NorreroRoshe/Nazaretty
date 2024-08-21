@@ -164,7 +164,7 @@ const About = () => {
   }, [mode]);
   const { data, error } = useSWR("assets/json/about.json", fetcher);
 
-  if (error) return <div>Failed to load</div>;
+  if (error) return <div>Failed to loads</div>;
   if (!data)
     return (
       <div>
