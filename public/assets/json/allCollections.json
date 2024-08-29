@@ -2,106 +2,170 @@
   "collections": [
     {
       "id": "201",
-      "img": "woocomerce/products/p1.png",
-      "hover_img": "woocomerce/products/p2.png",
-      "collections": "Nature",
-      "title": "Nature",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "202",
-      "img": "woocomerce/products/p12.png",
-      "hover_img": "woocomerce/products/p4.png",
-      "collections": "Vine",
-      "title": "Vine",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "203",
-      "img": "woocomerce/products/p3.png",
-      "hover_img": "woocomerce/products/p6.png",
-      "collections": "Ice",
-      "title": "Ice",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "204",
-      "img": "woocomerce/products/p4.png",
-      "hover_img": "woocomerce/products/p12.png",
-      "collections": "Flower",
-      "title": "Flower",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "205",
-      "img": "woocomerce/products/p5.png",
-      "hover_img": "woocomerce/products/p10.png",
-      "collections": "Lusina",
-      "title": "Lusina",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "206",
-      "img": "woocomerce/products/p6.png",
-      "hover_img": "woocomerce/products/p12.png",
-      "collections": "Safari",
-      "title": "Safari",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "207",
-      "img": "woocomerce/products/p7.png",
-      "hover_img": "woocomerce/products/p14.png",
-      "collections": "Da Vinci",
-      "title": "Da Vinci",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "208",
-      "img": "woocomerce/products/p8.png",
-      "hover_img": "woocomerce/products/p15.png",
-      "collections": "Provence",
-      "title": "Provence",
-      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
-    },
-    {
-      "id": "209",
-      "img": "woocomerce/products/p9.png",
-      "hover_img": "woocomerce/products/p18.png",
+      "img": "NazPhot/30.07.24/preview/1.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/2.jpg",
       "collections": "Wish",
       "title": "Wish",
       "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
     },
     {
-      "id": "210",
-      "img": "woocomerce/products/p10.png",
-      "hover_img": "woocomerce/products/p20.png",
+      "id": "202",
+      "img": "NazPhot/30.07.24/preview/98.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/99.jpg",
+      "collections": "Ice",
+      "title": "Ice",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "203",
+      "img": "NazPhot/30.07.24/preview/20.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/21.jpg",
+      "collections": "Ava",
+      "title": "Ava",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "204",
+      "img": "NazPhot/30.07.24/preview/30.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/31.jpg",
       "collections": "Crystal",
       "title": "Crystal",
       "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
     },
     {
+      "id": "205",
+      "img": "NazPhot/30.07.24/preview/74.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/75.jpg",
+      "collections": "Flower",
+      "title": "Flower",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "206",
+      "img": "NazPhot/30.07.24/preview/56.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/57.jpg",
+      "collections": "Waterfall",
+      "title": "Waterfall",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "207",
+      "img": "NazPhot/30.07.24/preview/77.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/78.jpg",
+      "collections": "Perl",
+      "title": "Perl",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "208",
+      "img": "NazPhot/30.07.24/preview/49.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/50.jpg",
+      "collections": "Vine",
+      "title": "Vine",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "209",
+      "img": "NazPhot/30.07.24/preview/68.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/69.jpg",
+      "collections": "Safari",
+      "title": "Safari",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "210",
+      "img": "NazPhot/30.07.24/preview/15.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/16.jpg",
+      "collections": "Veil",
+      "title": "Veil",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
       "id": "211",
-      "img": "woocomerce/products/p11.png",
-      "hover_img": "woocomerce/products/p22.png",
-      "collections": "Niagara",
-      "title": "Niagara",
+      "img": "NazPhot/30.07.24/preview/26.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/27.jpg",
+      "collections": "Greece",
+      "title": "Greece",
       "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
     },
     {
       "id": "212",
-      "img": "woocomerce/products/p12.png",
-      "hover_img": "woocomerce/products/p24.png",
+      "img": "NazPhot/01.08.24/preview/74.jpg",
+      "hover_img": "NazPhot/01.08.24/preview/75.jpg",
+      "collections": "Vintage",
+      "title": "Vintage",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "213",
+      "img": "NazPhot/30.07.24/preview/89.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/90.jpg",
+      "collections": "Calypso",
+      "title": "Calypso",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "214",
+      "img": "NazPhot/01.08.24/preview/47.jpg",
+      "hover_img": "NazPhot/01.08.24/preview/48.jpg",
+      "collections": "Lily",
+      "title": "Lily",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "215",
+      "img": "NazPhot/01.08.24/preview/77.jpg",
+      "hover_img": "NazPhot/01.08.24/preview/78.jpg",
+      "collections": "Saint Petersburg",
+      "title": "Saint Petersburg",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "216",
+      "img": "NazPhot/30.07.24/preview/105.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/106.jpg",
+      "collections": "Birds",
+      "title": "Birds",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "217",
+      "img": "NazPhot/30.07.24/preview/92.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/93.jpg",
+      "collections": "Frozen branch",
+      "title": "Frozen branch",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "218",
+      "img": "NazPhot/30.07.24/preview/43.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/44.jpg",
+      "collections": "Lusina",
+      "title": "Lusina",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "219",
+      "img": "NazPhot/30.07.24/preview/53.jpg",
+      "hover_img": "NazPhot/30.07.24/preview/54.jpg",
+      "collections": "Nature",
+      "title": "Nature",
+      "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
+    },
+    {
+      "id": "220",
+      "img": "NazPhot/01.08.24/preview/86.jpg",
+      "hover_img": "NazPhot/01.08.24/preview/87.jpg",
       "collections": "Geometry",
       "title": "Geometry",
       "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
     },
     {
-      "id": "213",
-      "img": "woocomerce/products/p13.png",
-      "hover_img": "woocomerce/products/p1.png",
-      "collections": "Malena",
-      "title": "Malena",
+      "id": "221",
+      "img": "NazPhot/01.08.24/preview/83.jpg",
+      "hover_img": "NazPhot/01.08.24/preview/84.jpg",
+      "collections": "large chandeliers",
+      "title": "large chandeliers",
       "coll_desc": "Данный светильник уникален всякими светящими ништяками и бла бла бла..... А еще он очень уникальный и всякое такое"
     }
   ]

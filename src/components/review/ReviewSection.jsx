@@ -24,7 +24,7 @@ export default function ReviewSection({ reviews }) {
       one: 0,
     };
     let totalReview = 0;
-    reviews.map((el) => {
+    reviews?.map((el) => {
       if (el.star == 5) {
         fullStar.five += 1;
       } else if (el.star == 4) {

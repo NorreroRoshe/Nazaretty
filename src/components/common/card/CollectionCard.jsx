@@ -93,12 +93,17 @@ const CollectionCard = ({ el }) => {
       <div className="woocomerce__feature-product">
         <div className="woocomerce__feature-thumb">
           <Link href={`/collections/${el.title}`}>
-            <div className="img-box">
+            <div className="img-box imgs-box">
               <Image
                 priority
                 width={440}
                 height={560}
-                style={{ width: "100%", height: "auto" }}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover",
+                  objectPosition: "bottom"
+                }}
                 className="image-box__item"
                 src={`/assets/imgs/${el.hover_img}`}
                 alt="Blog Thumbnail"
@@ -107,7 +112,12 @@ const CollectionCard = ({ el }) => {
                 priority
                 width={440}
                 height={560}
-                style={{ width: "100%", height: "auto" }}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover",
+                  objectPosition: "bottom"
+                }}
                 className="woocomerce__feature-mainImg"
                 src={`/assets/imgs/${el.img}`}
                 alt="product-img"

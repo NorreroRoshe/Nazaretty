@@ -938,6 +938,36 @@
           object-fit: cover;
         }
       }
+
+      .imgs-box {
+        height: 800px;
+
+        @media #{$xxl} {
+          height: 420px;
+        }
+
+        @media #{$xl} {
+          height: 400px;
+        }
+
+        @media #{$lg} {
+          height: 380px;
+        }
+
+        @media #{$md} {
+          height: 360px;
+        }
+
+        @media #{$sm} {
+          height: 360px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
     }
 
     &-mainImg {

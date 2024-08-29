@@ -99,7 +99,8 @@ const ProductCard = ({ el }) => {
                 width={440}
                 height={560}
                 style={{ width: "100%", height: "auto" }}
-                className="image-box__item"
+                // className="image-box__item"
+                className="woocomerce__feature-mainImg"
                 src={`/assets/imgs/${el.hover_img}`}
                 alt="Blog Thumbnail"
               />

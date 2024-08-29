@@ -232,7 +232,7 @@ const ProductDetails = ({ details }) => {
             <div className="woocomerce__single-wrapper">
               <div className="woocomerce__single-left">
                 <div className="woocomerce__single-productview product_imgs">
-                  {details.img.map((el, i) => (
+                  {details.imgs?.map((el, i) => (
                     <Image
                       key={i + "details"}
                       width={520}
@@ -280,10 +280,10 @@ const ProductDetails = ({ details }) => {
                     {tab === 1 ? (
                       <div>
                         <p className="woocomerce__single-discription2">
-                          {details.description.text}{" "}
+                          {details.description?.text}{" "}
                         </p>
                         <ul className="woocomerce__single-features">
-                          {details.description.featured.map((el, i) => (
+                          {details.description?.featured.map((el, i) => (
                             <li key={i + "details"}>
                               <Image
                                 width={25}
@@ -302,14 +302,14 @@ const ProductDetails = ({ details }) => {
                     {tab === 2 ? (
                       <div>
                         {/* <p>{details.information}</p> */}
-                        <DetailsInformation information={details.information} />
+                        <DetailsInformation information={details?.information} />
                       </div>
                     ) : (
                       ""
                     )}
                     {tab === 3 ? (
                       <div>
-                        <ReviewSection reviews={details.reviews} />
+                        <ReviewSection reviews={details?.reviews} />
                       </div>
                     ) : (
                       ""
@@ -371,10 +371,10 @@ const ProductDetails = ({ details }) => {
 
                   <div>
                     <p className="woocomerce__single-discription">
-                      {details.description.text}
+                      {details.description?.text}
                     </p>
                     <ul className="woocomerce__single-features">
-                      {details.description.featured.map((el, i) => (
+                      {details.description?.featured.map((el, i) => (
                         <li key={i + "details"}>
                           <Image
                             width={25}

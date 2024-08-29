@@ -11,7 +11,8 @@ const Details = () => {
   const router = useRouter();
 
   const { data, error } = useSWR(
-    "../assets/json/allProductDetails.json",
+    // "../assets/json/allProductDetails.json",
+    "../assets/json/allProducts.json",
     fetcher
   );
 
@@ -24,7 +25,9 @@ const Details = () => {
     );
   let details = {};
   if (router.query.id) {
-    details = data.details.find((el) => el.parent_id === router.query.id);
+    // details = data.details.find((el) => el.parent_id === router.query.id);
+    details = data.products.find((el) => el.id === router.query.id);
+
   }
 
   return (
