@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AppContext from "@/components/AppContext";
-import { useState, useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Accordion } from "react-bootstrap";
 import { Feature } from "..";
 import { toast } from "react-toastify";
@@ -16,6 +16,24 @@ const ProductDetails = ({ details }) => {
   const [count, setCount] = useState(1);
   const [selectedSize, setSelectedSize] = useState(["m"]);
   const [selectedColor, setSelectedColor] = useState(["black"]);
+  const [isWideScreen, setIsWideScreen] = useState(true);
+
+  useEffect(() => {
+    // Function to check screen size
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 768); // Set the threshold for wide screens
+    };    
+    
+    // Initial check
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const warningTost = (data) => {
     toast.warn(data, {
       position: "top-center",
@@ -122,7 +140,7 @@ const ProductDetails = ({ details }) => {
             cartItems.push(fullData)      
             localStorage.setItem('cart', JSON.stringify(cartItems))
           }
-          successTost("SuccessFully add to cart");
+          successTost("Успешно добавлено в корзину");
         }
       } else {
         context.dispatch({
@@ -138,7 +156,7 @@ const ProductDetails = ({ details }) => {
           cartItems.push(fullData)      
           localStorage.setItem('cart', JSON.stringify(cartItems))
         }
-        successTost("SuccessFully add to cart");
+        successTost("Успешно добавлено в корзину");
       }
     } else {
       context.dispatch({
@@ -154,7 +172,7 @@ const ProductDetails = ({ details }) => {
         cartItems.push(fullData)      
         localStorage.setItem('cart', JSON.stringify(cartItems))
       }
-      successTost("SuccessFully add to cart");
+      successTost("Успешно добавлено в корзину");
     }
   };
   React.useEffect(() => {
@@ -199,7 +217,7 @@ const ProductDetails = ({ details }) => {
             type: "setAllWishList",
             value: [...rootState.allWishList, customDetails],
           });
-          successTost("SuccessFully add to wishlist");
+          successTost("Успешно добавлено add to wishlist");
         }
       } else {
         context.dispatch({
@@ -210,7 +228,7 @@ const ProductDetails = ({ details }) => {
           type: "setActiveWishList",
           value: [...rootState.activeWishList, customDetails.parent_id],
         });
-        successTost("SuccessFully add to wishlist");
+        successTost("Успешно добавлено add to wishlist");
       }
     } else {
       context.dispatch({
@@ -221,316 +239,361 @@ const ProductDetails = ({ details }) => {
         type: "setActiveWishList",
         value: [...rootState.activeWishList, customDetails.parent_id],
       });
-      successTost("SuccessFully add to wishlist");
+      successTost("Успешно добавлено add to wishlist");
     }
   };
   return (
-    <>
-      {details && Object.keys(details).length ? (
-        <div>
-          <section className="woocomerce__single sec-plr-50">
-            <div className="woocomerce__single-wrapper">
-              <div className="woocomerce__single-left">
-                <div className="woocomerce__single-productview product_imgs">
-                  {details.imgs?.map((el, i) => (
-                    <Image
-                      key={i + "details"}
-                      width={520}
-                      height={685}
-                      style={{ height: "auto" }}
-                      src={`/assets/imgs/${el}`}
-                      alt="single-1"
-                    />
-                  ))}
-                </div>
-                <div className="woocomerce__single-productMore fade_bottom">
-                  <ul className="nav nav-tabs" id="myTab" role="tablist">
-                    <li className="nav-item" role="presentation">
-                      <button
-                        onClick={() => setTab(1)}
-                        type="button"
-                        role="tab"
-                        className={tab === 1 ? "nav-link active" : "nav-link"}
-                      >
-                        Description
-                      </button>
-                    </li>
-                    <li className="nav-item" role="presentation">
-                      <button
-                        className={tab === 2 ? "nav-link active" : "nav-link"}
-                        onClick={() => setTab(2)}
-                        type="button"
-                        role="tab"
-                      >
-                        Information
-                      </button>
-                    </li>
-                    <li className="nav-item" role="presentation">
-                      <button
-                        className={tab === 3 ? "nav-link active" : "nav-link"}
-                        onClick={() => setTab(3)}
-                        type="button"
-                        role="tab"
-                      >
-                        Reviews
-                      </button>
-                    </li>
-                  </ul>
-                  <div className="tab-content" id="myTabContent">
-                    {tab === 1 ? (
-                      <div>
-                        <p className="woocomerce__single-discription2">
-                          {details.description?.text}{" "}
-                        </p>
-                        <ul className="woocomerce__single-features">
-                          {details.description?.featured.map((el, i) => (
-                            <li key={i + "details"}>
+
+
+
+
+
+
+
+      <>
+            {isWideScreen ? (
+              <div>
+                {/* 1 */}
+                {details && Object.keys(details).length ? (
+                  <section className="woocomerce__single sec-plr-50">
+                    <div className="woocomerce__single-wrapper">
+                      <div className="woocomerce__single-left">
+                        <div className="woocomerce__single-productview product_imgs">
+                          {details.imgs?.map((el, i) => (
+                            <Image
+                              key={i + "details"}
+                              width={520}
+                              height={685}
+                              style={{ height: "auto" }}
+                              src={`/assets/imgs/${el}`}
+                              alt="single-1"
+                            />
+                          ))}
+                        </div>
+                        <div className="woocomerce__single-productMore fade_bottom">
+                          <ul className="nav nav-tabs" id="myTab" role="tablist">
+                            <li className="nav-item" role="presentation">
+                              <button
+                                className={tab === 1 ? "nav-link active" : "nav-link"}
+                                onClick={() => setTab(1)}
+                                type="button"
+                                role="tab"
+                              >
+                                Information
+                              </button>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                              <button
+                                onClick={() => setTab(2)}
+                                type="button"
+                                role="tab"
+                                className={tab === 2 ? "nav-link active" : "nav-link"}
+                              >
+                                Description
+                              </button>
+                            </li>
+                          </ul>
+                          <div className="tab-content" id="myTabContent">
+                            {tab === 2 ? (
+                              <div>
+                                <p className="woocomerce__single-discription2">
+                                  {details.description?.text}{" "}
+                                </p>
+                                <ul className="woocomerce__single-features">
+                                  {details.description?.featured.map((el, i) => (
+                                    <li key={i + "details"}>
+                                      <Image
+                                        width={25}
+                                        height={14}
+                                        src="/assets/imgs/woocomerce/check.png"
+                                        alt="check"
+                                      />
+                                      {el.name}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                            {tab === 1 ? (
+                              <div>
+                                <p>{details.information}</p>
+                                <DetailsInformation information={details} />
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="woocomerce__single-right wc_slide_btm">
+                        <ul className="woocomerce__single-breadcrumb">
+                          <li>
+                            <Link href={"/"}>
+                              Nazaretty.ru <i className="fa-solid fa-chevron-right"></i>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href={"/shop/full"}>
+                              Каталог <i className="fa-solid fa-chevron-right"></i>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href={"#"}>{details.title}</Link>
+                          </li>
+                        </ul>
+                        <div className="woocomerce__single-content">
+                          <h2 className="woocomerce__single-title">{details.title}</h2>
+                          <div>
+                            <p className="woocomerce__single-discription">
+                              {details.description?.text}
+                            </p>
+                            <ul className="woocomerce__single-features">
+                              {details.description?.featured.map((el, i) => (
+                                <li key={i + "details"}>
+                                  <Image
+                                    width={25}
+                                    height={14}
+                                    src="/assets/imgs/woocomerce/check.png"
+                                    alt="check"
+                                  />
+                                  {el.name}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div className="woocomerce__single-varitions">
+                            <p className="woocomerce__single-sku">
+                              SKU: {details.pro_code}
+                            </p>
+                          </div>
+                          <div className="woocomerce__single-buttons">
+                            <div className="woocomerce__single-incrementwrap">
+                              <div className="woocomerce__single-counter">
+                                <p
+                                  onClick={() => setCount(count > 1 ? count - 1 : 1)}
+                                  className="counter__decrement pointer_cursor"
+                                >
+                                  &ndash;
+                                </p>
+                                <input
+                                  className="counter__input"
+                                  type="text"
+                                  value={count}
+                                  name="counter"
+                                  size="5"
+                                  readOnly="readonly"
+                                />
+                                <p
+                                  onClick={() => setCount(count + 1)}
+                                  className="counter__increment pointer_cursor"
+                                >
+                                  +
+                                </p>
+                              </div>
+                              <button
+                                className="woocomerce__single-cart"
+                                onClick={() =>
+                                  selectedColor.length && selectedSize.length
+                                    ? FullProduct(details)
+                                    : warningTost("Please select color and size")
+                                }
+                              >
+                                <Image
+                                  width={25}
+                                  height={22}
+                                  src="/assets/imgs/woocomerce/cart.png"
+                                  alt="cart"
+                                />
+                                В корзину
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                ) : (
+                  ""
+                )}
+              </div>
+            ) : (
+              <div>
+                {/* 2 */}
+                {details && Object.keys(details).length ? (
+                  <section className="woocomerce__single sec-plr-50"><div className="woocomerce__single-wrapper">
+                    <div className="woocomerce__single-left">
+                      <div className="woocomerce__single-productMore fade_bottom">
+                        <ul className="nav nav-tabs" id="myTab" role="tablist">
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className={tab === 1 ? "nav-link active" : "nav-link"}
+                              onClick={() => setTab(1)}
+                              type="button"
+                              role="tab"
+                            >
+                              Параметры
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              onClick={() => setTab(2)}
+                              type="button"
+                              role="tab"
+                              className={tab === 2 ? "nav-link active" : "nav-link"}
+                            >
+                              Описание
+                            </button>
+                          </li>
+                        </ul>
+                        <div className="tab-content" id="myTabContent">
+                          {tab === 2 ? (
+                            <div>
+                              <ul className="woocomerce__single-features">
+                                {details.description?.featured.map((el, i) => (
+                                  <li key={i + "details"}>
+                                    <Image
+                                      width={25}
+                                      height={14}
+                                      src="/assets/imgs/woocomerce/check.png"
+                                      alt="check"
+                                    />
+                                    {el.name}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                          {tab === 1 ? (
+                            <div>
+                              <p>{details.information}</p>
+                              <DetailsInformation information={details} />
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="woocomerce__single-right wc_slide_btm">
+                      <ul className="woocomerce__single-breadcrumb">
+                        <li>
+                          <Link href={"/"}>
+                            Nazaretty.ru <i className="fa-solid fa-chevron-right"></i>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href={"/shop/full"}>
+                            Каталог <i className="fa-solid fa-chevron-right"></i>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href={"#"}>{details.title}</Link>
+                        </li>
+                      </ul>
+                      <div className="woocomerce__single-content">
+                        <h2 className="woocomerce__single-title">{details.title}</h2>
+                        <div className="woocomerce__single-productview product_imgs">
+                        {details.imgs?.map((el, i) => (
+                          <Image
+                            key={i + "details"}
+                            width={520}
+                            height={685}
+                            style={{ height: "auto" }}
+                            src={`/assets/imgs/${el}`}
+                            alt="single-1"
+                          />
+                        ))}
+                      </div>
+                        <div>
+                        </div>
+                        <div className="woocomerce__single-varitions">
+                          <p className="woocomerce__single-sku">
+                            SKU: {details.pro_code}
+                          </p>
+                        </div>
+                        <div className="woocomerce__single-buttons">
+                          <div className="woocomerce__single-incrementwrap">
+                            <div className="woocomerce__single-counter">
+                              <p
+                                onClick={() => setCount(count > 1 ? count - 1 : 1)}
+                                className="counter__decrement pointer_cursor"
+                              >
+                                &ndash;
+                              </p>
+                              <input
+                                className="counter__input"
+                                type="text"
+                                value={count}
+                                name="counter"
+                                size="5"
+                                readOnly="readonly"
+                              />
+                              <p
+                                onClick={() => setCount(count + 1)}
+                                className="counter__increment pointer_cursor"
+                              >
+                                +
+                              </p>
+                            </div>
+                            <button
+                              className="woocomerce__single-cart"
+                              onClick={() =>
+                                selectedColor.length && selectedSize.length
+                                  ? FullProduct(details)
+                                  : warningTost("Please select color and size")
+                              }
+                            >
                               <Image
                                 width={25}
-                                height={14}
-                                src="/assets/imgs/woocomerce/check.png"
-                                alt="check"
+                                height={22}
+                                src="/assets/imgs/woocomerce/cart.png"
+                                alt="cart"
                               />
-                              {el.name}
-                            </li>
-                          ))}
-                        </ul>
+                              В корзину
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                    ) : (
-                      ""
-                    )}
-                    {tab === 2 ? (
-                      <div>
-                        {/* <p>{details.information}</p> */}
-                        <DetailsInformation information={details?.information} />
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                    {tab === 3 ? (
-                      <div>
-                        <ReviewSection reviews={details?.reviews} />
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                </div>
-              </div>
-              <div className="woocomerce__single-right wc_slide_btm">
-                <ul className="woocomerce__single-breadcrumb">
-                  <li>
-                    <Link href={"/"}>
-                      Home <i className="fa-solid fa-chevron-right"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={"/shop/full"}>
-                      Shop <i className="fa-solid fa-chevron-right"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>
-                      {details.category}{" "}
-                      <i className="fa-solid fa-chevron-right"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={"#"}>{details.title}</Link>
-                  </li>
-                </ul>
-                <div className="woocomerce__single-content">
-                  <h2 className="woocomerce__single-title">{details.title}</h2>
-                  {/* <div className="woocomerce__single-pricelist">
-                    <span className="woocomerce__single-discountprice">
-                      £{details.dis_price ? details.dis_price : details.price}
-                    </span>
-                    <span className="woocomerce__single-originalprice">
-                      {details.dis_price ? " £" + details.price : ""}
-                    </span>
-                    <span className="woocomerce__single-discount">
-                      {details.dis_price
-                        ? percentage(details.dis_price, details.price) +
-                          "%" +
-                          " OFF"
-                        : ""}
-                    </span>
-                  </div> */}
-                  {/* {details.reviews && details.reviews.length ? (
-                    <div className="woocomerce__single-review">
-                      <div className="woocomerce__single-star" id="rating_star">
-                        {star(details.reviews)}
-                      </div>
-                      <span className="woocomerce__single-reviewcount">
-                        ({details.reviews.length} Reviews)
-                      </span>
                     </div>
-                  ) : (
-                    ""
-                  )} */}
+                  </div>
+                  </section>
+                ) : (
+                  ""
+                )}
+              </div>
+            )}
+          </>
+        );
+      };
 
-                  <div>
-                    <p className="woocomerce__single-discription">
-                      {details.description?.text}
-                    </p>
-                    <ul className="woocomerce__single-features">
-                      {details.description?.featured.map((el, i) => (
-                        <li key={i + "details"}>
-                          <Image
-                            width={25}
-                            height={14}
-                            src="/assets/imgs/woocomerce/check.png"
-                            alt="check"
-                          />
-                          {el.name}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="woocomerce__single-varitions">
-                    <Accordion className="accordion" id="accordionExample">
-                      <Accordion.Item eventKey="0" className="accordion-item">
-                        <Accordion.Header
-                          className="accordion-header"
-                          id="headingOne"
-                        >
-                          <div className="woocomerce__single-stitle">
-                            Available Size
-                          </div>
-                          <ul className="woocomerce__single-sizelist">
-                            {selectedSize.map((el, i) => (
-                              <li
-                                onClick={() => sizeSelect(el)}
-                                key={i + "selectSize"}
-                              >
-                                {el}
-                              </li>
-                            ))}
-                          </ul>
-                        </Accordion.Header>
-                        <Accordion.Body className="accordion-body">
-                          <ul className="woocomerce__single-sizelist">
-                            {details.size.map((el, i) => (
-                              <li
-                                onClick={() => sizeSelect(el)}
-                                key={i + "size"}
-                              >
-                                {el}
-                              </li>
-                            ))}
-                          </ul>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                      <Accordion.Item eventKey="1" className="accordion-item">
-                        <Accordion.Header
-                          className="accordion-header"
-                          id="headingTwo"
-                        >
-                          <div className="woocomerce__single-stitle">
-                            Available Color
-                          </div>
-                          <ul className="woocomerce__single-sizelist">
-                            {selectedColor.map((el, i) => (
-                              <li
-                                onClick={() => colorSelect(el)}
-                                key={i + "selectColor"}
-                              >
-                                {el}
-                              </li>
-                            ))}
-                          </ul>
-                        </Accordion.Header>
-                        <Accordion.Body className="accordion-body">
-                          <ul className="woocomerce__single-sizelist">
-                            {details.color.map((el, i) => (
-                              <li
-                                onClick={() => colorSelect(el)}
-                                key={i + "color"}
-                              >
-                                {el}
-                              </li>
-                            ))}
-                          </ul>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                    </Accordion>
-                    <p className="woocomerce__single-sku">
-                      SKU: {details.pro_code}
-                    </p>
-                  </div>
-                  <div className="woocomerce__single-buttons">
-                    <div className="woocomerce__single-incrementwrap">
-                      <div className="woocomerce__single-counter">
-                        <p
-                          onClick={() => setCount(count > 1 ? count - 1 : 1)}
-                          className="counter__decrement pointer_cursor"
-                        >
-                          &ndash;
-                        </p>
-                        <input
-                          className="counter__input"
-                          type="text"
-                          value={count}
-                          name="counter"
-                          size="5"
-                          readOnly="readonly"
-                        />
-                        <p
-                          onClick={() => setCount(count + 1)}
-                          className="counter__increment pointer_cursor"
-                        >
-                          +
-                        </p>
-                      </div>
-                      <button
-                        className="woocomerce__single-cart"
-                        onClick={() =>
-                          selectedColor.length && selectedSize.length
-                            ? FullProduct(details)
-                            : warningTost("Please select color and size")
-                        }
-                      >
-                        <Image
-                          width={25}
-                          height={22}
-                          src="/assets/imgs/woocomerce/cart.png"
-                          alt="cart"
-                        />
-                        Add to cart
-                      </button>
-                      <button
-                        className="woocomerce__single-wish"
-                        onClick={() => addWishList(details)}
-                      >
-                        <i
-                          className={
-                            rootState.activeWishList.includes(details.parent_id)
-                              ? "fa-solid fa-heart"
-                              : "fa-regular fa-heart"
-                          }
-                          style={{ fontSize: "20px" }}
-                        ></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {details.related_product && details.related_product.length ? (
-            <Feature
-              featured={details.related_product}
-              headerTitle={"Related"}
-            />
-          ) : (
-            ""
-          )}
-        </div>
-      ) : (
-        ""
-      )}
-    </>
-  );
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default ProductDetails;

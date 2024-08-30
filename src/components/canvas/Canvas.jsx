@@ -74,7 +74,7 @@ const Canvas = ({ ofCanvasArea }) => {
                 />
               </Link>
             </div>
-            <div className="offcanvas__social">
+            {/* <div className="offcanvas__social">
               <h3 className="social-title">Follow Us</h3>
               <ul>
                 <li>
@@ -96,8 +96,8 @@ const Canvas = ({ ofCanvasArea }) => {
                   <a href="#">YouTube</a>
                 </li>
               </ul>
-            </div>
-            <div className="offcanvas__links">
+            </div> */}
+            {/* <div className="offcanvas__links">
               <ul>
                 <li>
                   <Link href="/about">About</Link>
@@ -112,7 +112,7 @@ const Canvas = ({ ofCanvasArea }) => {
                   <Link href="/blog">blog</Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="offcanvas__mid">
             <div className="offcanvas__menu-wrapper">
@@ -120,21 +120,21 @@ const Canvas = ({ ofCanvasArea }) => {
                 <ul className="menu-anim title" ref={headerTitle}>
                   <li>
                     <div className="header_title">
-                      <Link href={"/"}>HOME</Link>
+                      <Link href={"/"}>Главная</Link>
                     </div>
                   </li>
                   <li>
                     <div className="header_title d-flex">
-                      <Link href={"#"}>Shop</Link>
-                      <div className="accordian-btn">
+                      <Link href={"/shop/full"}>Каталог</Link>
+                      {/* <div className="accordian-btn">
                         {accordion === 2 ? (
                           <a onClick={() => openData(0)}>-</a>
                         ) : (
                           <a onClick={() => openData(2)}>+</a>
                         )}
-                      </div>
+                      </div> */}
                     </div>
-                    <ul
+                    {/* <ul
                       className="sub_title"
                       style={
                         accordion === 2 ? { display: "" } : { display: "none" }
@@ -146,20 +146,20 @@ const Canvas = ({ ofCanvasArea }) => {
                       <li>
                         <Link href={"/shop/side-bar"}>Side Bar</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <div className="header_title d-flex">
-                      <Link href={"/shop/full"}>Product</Link>
-                      <div className="accordian-btn">
+                      <Link href={"/collection/allCollection"}>Коллекции</Link>
+                      {/* <div className="accordian-btn">
                         {accordion === 3 ? (
                           <a onClick={() => openData(0)}>-</a>
                         ) : (
                           <a onClick={() => openData(3)}>+</a>
                         )}
-                      </div>
+                      </div> */}
                     </div>
-                    <ul
+                    {/* <ul
                       className="sub_title"
                       style={
                         accordion === 3 ? { display: "" } : { display: "none" }
@@ -171,138 +171,28 @@ const Canvas = ({ ofCanvasArea }) => {
                       <li>
                         <Link href={"/category"}>Product Category</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <div className="header_title d-flex">
-                      <Link href={"#"}>PAGES</Link>
-                      <div className="accordian-btn">
-                        {accordion === 4 ? (
-                          <a onClick={() => openData(0)}>-</a>
-                        ) : (
-                          <a onClick={() => openData(4)}>+</a>
-                        )}
-                      </div>
+                      <Link href={"/about"}>О&nbsp;компании</Link>
                     </div>
-                    <ul
-                      className="sub_title"
-                      style={
-                        accordion === 4 ? { display: "" } : { display: "none" }
-                      }
-                    >
-                      <li className="sub_header_title">
-                        <div className="d-flex justify-content-between">
-                          <Link href="#">Woocommerce</Link>
-                          <div className="sub-accordian-btn">
-                            {subAccordion === 4.1 ? (
-                              <a onClick={() => openSubData(4)}>-</a>
-                            ) : (
-                              <a onClick={() => openSubData(4.1)}>+</a>
-                            )}
-                          </div>
-                        </div>
-                        <ul
-                          className="sub_title_2"
-                          style={
-                            subAccordion === 4.1
-                              ? { display: "" }
-                              : { display: "none" }
-                          }
-                        >
-                          <li>
-                            <Link href={"/cart"}>Cart</Link>
-                          </li>
-                          <li>
-                            <Link href={"/checkout"}>Checkout</Link>
-                          </li>
-                          <li>
-                            <Link href={"/sign-up"}>Sign Up</Link>
-                          </li>
-                          <li>
-                            <Link href={"/sign-in"}>Sign In</Link>
-                          </li>
-                          <li>
-                            <Link href={"/reset"}>Reset Password</Link>
-                          </li>
-                          <li>
-                            <Link href={"/profile"}>Profile</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="sub_header_title">
-                        <div className="d-flex justify-content-between">
-                          <Link href={"/blog"}>blog</Link>
-                          <div className="sub-accordian-btn">
-                            {subAccordion === 4.4 ? (
-                              <a onClick={() => openSubData(4)}>-</a>
-                            ) : (
-                              <a onClick={() => openSubData(4.4)}>+</a>
-                            )}
-                          </div>
-                        </div>
-
-                        <ul
-                          className="sub_title_2"
-                          style={
-                            subAccordion === 4.4
-                              ? { display: "" }
-                              : { display: "none" }
-                          }
-                        >
-                          <li>
-                            <Link href={"/blog"}>blog</Link>
-                          </li>
-                          <li>
-                            <Link href={"/blog-v2"}>blog V2</Link>
-                          </li>
-                          <li>
-                            <Link href={"/blog/301"}>blog details</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="sub_header_title">
-                        <div className="d-flex justify-content-between">
-                          <Link href={"#"}>Others</Link>
-                          <div className="sub-accordian-btn">
-                            {subAccordion === 4.5 ? (
-                              <a onClick={() => openSubData(4)}>-</a>
-                            ) : (
-                              <a onClick={() => openSubData(4.5)}>+</a>
-                            )}
-                          </div>
-                        </div>
-
-                        <ul
-                          className="sub_title_2"
-                          style={
-                            subAccordion === 4.5
-                              ? { display: "" }
-                              : { display: "none" }
-                          }
-                        >
-                          <li>
-                            <Link href={"/about"}>about</Link>
-                          </li>
-                          <li>
-                            <Link href={"/faq"}>FAQs</Link>
-                          </li>
-                          <li>
-                            <Link href={"/error"}>404</Link>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     <div className="header_title">
-                      <Link href={"/contact"}>CONTACT</Link>
+                      <Link href={"/collaboration"}>Сотрудничество</Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="header_title">
+                      <Link href={"/Contacts"}>Контакты</Link>
                     </div>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
-          <div className="offcanvas__right">
+          {/* <div className="offcanvas__right">
             <div className="offcanvas__search">
               <OffCanvasSearch allData={allData} />
             </div>
@@ -332,7 +222,7 @@ const Canvas = ({ ofCanvasArea }) => {
               alt="shape"
               className="shape-2"
             />
-          </div>
+          </div> */}
           <div className="offcanvas__close">
             <button type="button" onClick={closeCanvas}>
               <FontAwesomeIcon icon={faXmark}></FontAwesomeIcon>

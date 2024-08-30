@@ -69,6 +69,7 @@ const DigitalAgencyBrand = () => {
                     height={67}
                     src={Brand5}
                     alt="Brand Logo"
+                    className="mobocqwcqwcqw"
                   />
                 </div>
                 <div className="brand__item fade_bottom">
@@ -78,6 +79,7 @@ const DigitalAgencyBrand = () => {
                     height={63}
                     src={Brand6}
                     alt="Brand Logo"
+                    className="mobocqwcqwcqw"
                   />
                 </div>
                 <div className="brand__item fade_bottom">
@@ -87,6 +89,7 @@ const DigitalAgencyBrand = () => {
                     height={67}
                     src={Brand1}
                     alt="Brand Logo"
+                    className="mobocqwcqwcqw"
                   />
                 </div>
                 <div className="brand__item fade_bottom">
@@ -96,6 +99,7 @@ const DigitalAgencyBrand = () => {
                     height={67}
                     src={Brand2}
                     alt="Brand Logo"
+                    className="mobocqwcqwcqw"
                   />
                 </div>
               </div>

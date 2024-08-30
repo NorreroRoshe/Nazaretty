@@ -2,13 +2,10 @@ export default function DetailsInformation({ information }) {
   console.log(information);
   return (
     <>
-      {information && information.length
+      {/* {information && information.length
         ? information.map((el, i) => (
             <div key={i + "information"} className="mt-5">
               <p>{el.details_text}</p>
-              {/* {
-              (el.keys && el.keys.length) && (el.data && el.data.length) ? : ''
-            } */}
               <table style={{ borderCollapse: "collapse", width: "100%" }} className="mt-4">
                 <thead>
                   <tr>
@@ -51,7 +48,25 @@ export default function DetailsInformation({ information }) {
               </table>
             </div>
           ))
-        : ""}
-    </>
+        : ""} */}
+    {!!information?.lenght && (
+      <p>Длинна: &nbsp;<span>{information?.lenght} см.</span></p>
+    )}
+    {!!information?.width && (
+      <p>Ширина: &nbsp;<span>{information?.width} см.</span></p>
+    )}
+    {!!information?.diameter && (
+      <p>Диаметр: &nbsp;<span>{information?.diameter} см.</span></p>
+    )}
+    {!!information?.height && (
+      <p>Высота: &nbsp;<span>{information?.height} см.</span></p>
+    )}
+    {!!information?.otstup && (
+      <p>Отступ от стены: &nbsp;<span>{information?.otstup} см.</span></p>
+    )}
+    {!!information?.istochnik && (
+      <p>Источник света: &nbsp;<span>{information?.istochnik} см.</span></p>
+    )}
+  </>
   );
 }

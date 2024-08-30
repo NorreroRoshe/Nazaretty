@@ -603,6 +603,9 @@
 
     &-varitions {
       padding-top: 40px;
+      @media(max-width: 600px) {
+      padding-top: 10px;
+      }
     }
 
     &-stitle {

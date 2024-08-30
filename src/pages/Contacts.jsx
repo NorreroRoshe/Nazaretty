@@ -180,8 +180,8 @@ const About = () => {
   return (
     <div>
       <Head>
-        <title>Collab with Retails</title>
-        <meta name="description" content="About Description" />
+        <title>Контакты</title>
+        <meta name="description" content="Контакты с Nazaretty" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>

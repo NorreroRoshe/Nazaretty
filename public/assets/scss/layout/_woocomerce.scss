@@ -798,7 +798,8 @@
 
     &-wrapper {
       display: grid;
-      grid-gap: 70px 20px;
+      // grid-gap: 70px 20px;
+      grid-gap: 70px 5px;
       grid-template-columns: repeat(4, 1fr);
     
 
@@ -811,7 +812,12 @@
       }
 
       @media #{$sm} {
-        grid-gap: 40px;
+        // grid-gap: 40px;
+        // grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 530px) {
+        // grid-gap: 40px;
         grid-template-columns: 1fr;
       }
     }
@@ -924,9 +930,9 @@
           height: 380px;
         }
 
-        @media #{$md} {
-          height: 360px;
-        }
+        // @media #{$md} {
+        //   height: 360px;
+        // }
 
         @media #{$sm} {
           height: 360px;
@@ -992,7 +998,8 @@
       font-weight: 400;
       font-size: 14px;
       color: var(--black-2);
-      background: rgba(255, 255, 255, 0.3);
+      // background: rgba(255, 255, 255, 0.3);
+      background: rgb(215 212 212);
       transition: 0.5s;
 
       &:hover {
@@ -2062,5 +2069,18 @@ ul.mega-menu-2.woocomerce-megamenu {
   justify-content: space-between;
   @media (max-width: 767px) {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.qefgwreascqewvca {
+  @media(max-width: 1023px) {
+    display: none !important;
+  }
+}
+
+.ewrves {
+  @media(max-width: 530px) {
+    object-fit: cover;
+    object-position: bottom !important;
   }
 }
