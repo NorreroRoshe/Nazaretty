@@ -2,19 +2,19 @@
   "hero_advertising": [
     {
       "id": "101",
-      "title": "Express your natural beauty",
-      "description": "View the full case study of our recent featured and awesome global branding agency that powers",
+      "title": "",
+      "description": "",
       "sub_title": "Starts from",
       "img": "woocomerce/exclusive/wocomerce-1.jpg",
-      "price": "65.89"
+      "price": ""
     },
     {
       "id": "103",
-      "title": "Express your natural beauty",
-      "description": "View the full case study of our recent featured and awesome global branding agency that powers",
+      "title": "",
+      "description": "",
       "sub_title": "Starts from",
       "img": "woocomerce/exclusive/ex3.jpg",
-      "price": "65.89"
+      "price": ""
     }
   ],
   "body_advertising": [

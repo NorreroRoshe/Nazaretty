@@ -24,7 +24,7 @@ const PortfolioSwiperServiseBet = () => {
                   <div className="row" style={{justifyContent: 'center'}}>
                     <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                       <div className="portfolio__service-item">
-                        <Link href="/service-details">
+                        <Link href="/for-designers">
                           <h3 className="ps-title">
                             Дизайнерам
                           </h3>
@@ -38,7 +38,7 @@ const PortfolioSwiperServiseBet = () => {
                     </div>
                     <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                       <div className="portfolio__service-item">
-                        <Link href="/service-details">
+                        <Link href="/for-retails">
                           <h3 className="ps-title">
                             Дилерам
                           </h3>

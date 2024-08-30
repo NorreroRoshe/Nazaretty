@@ -484,6 +484,10 @@
       text-indent: 50px;
     }
 
+    @media (max-width: 630px) {
+      font-size: 22px;
+    }
+
     a {
       color: var(--black-2);
       font-family: $font_newyork;

@@ -2322,6 +2322,9 @@ main {
 .sec-su885 {
   margin-right: auto;
   margin-left: 0;
+  @media(max-width: 630px) {
+    display: none;
+  }
 }
 
 .sec-su886 {
