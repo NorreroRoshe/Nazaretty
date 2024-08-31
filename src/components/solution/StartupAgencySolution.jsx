@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const StartupAgencySolution = ({collData}) => {
   return (
@@ -6,7 +7,7 @@ const StartupAgencySolution = ({collData}) => {
       <section className="solution__area-4 solution__area-6 mt-60 mb-60 db"
         style={{backgroundImage: `url(${collData.image.src})`}}
         >
-        <div className="container">
+        <Link style={{display: 'block'}} href={collData?.src} className="container">
           <div className="row">
             <div className="col-xxl-6 xxl-6 col-xl-6 xl-6 col-lg-6 lg-6 col-md-6 md-6">
               <div className="solution__content">
@@ -22,7 +23,7 @@ const StartupAgencySolution = ({collData}) => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       </section>
     </>
   );

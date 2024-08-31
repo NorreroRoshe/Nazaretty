@@ -133,20 +133,20 @@ const Index = () => {
             },
           });
 
-          const itemSplitted = new SplitText(splitTextLine, {
-            type: "words, lines",
-          });
-          gsap.set(splitTextLine, { perspective: 400 });
-          itemSplitted.split({ type: "lines" });
-          tl.from(itemSplitted.lines, {
-            duration: 1,
-            delay: 0.3,
-            opacity: 0,
-            rotationX: -80,
-            force3D: true,
-            transformOrigin: "top center -50",
-            stagger: 0.1,
-          });
+          // const itemSplitted = new SplitText(splitTextLine, {
+          //   type: "words, lines",
+          // });
+          // gsap.set(splitTextLine, { perspective: 400 });
+          // itemSplitted.split({ type: "lines" });
+          // tl.from(itemSplitted.lines, {
+          //   duration: 1,
+          //   delay: 0.3,
+          //   opacity: 0,
+          //   rotationX: -80,
+          //   force3D: true,
+          //   transformOrigin: "top center -50",
+          //   stagger: 0.1,
+          // });
         });
         let splitTextLines = gsap.utils.toArray(".text-anim p");
 
@@ -163,18 +163,18 @@ const Index = () => {
             },
           });
 
-          const itemSplitted = new SplitText(splitTextLine, { type: "lines" });
-          gsap.set(splitTextLine, { perspective: 400 });
-          itemSplitted.split({ type: "lines" });
-          tl.from(itemSplitted.lines, {
-            duration: 1,
-            delay: 0.5,
-            opacity: 0,
-            rotationX: -80,
-            force3D: true,
-            transformOrigin: "top center -50",
-            stagger: 0.1,
-          });
+          // const itemSplitted = new SplitText(splitTextLine, { type: "lines" });
+          // gsap.set(splitTextLine, { perspective: 400 });
+          // itemSplitted.split({ type: "lines" });
+          // tl.from(itemSplitted.lines, {
+          //   duration: 1,
+          //   delay: 0.5,
+          //   opacity: 0,
+          //   rotationX: -80,
+          //   force3D: true,
+          //   transformOrigin: "top center -50",
+          //   stagger: 0.1,
+          // });
         });
         let char_come = document.querySelectorAll(".animation__char_come");
 
@@ -287,18 +287,21 @@ const Index = () => {
       title: 'Коллекция',
       subtitle: 'ICE',
       description: 'Эта утонченная коллекция сочетает в себе изысканные геометрические формы хрусталя с легким металлическим каркасом, создавая потрясающую композицию в стиле современной элегантности.',
+      src: '/collections/Ice'
     },
     secondText: {
       image: a1,
       title: 'Коллекция',
       subtitle: 'VINE',
       description: 'Эта утонченная коллекция сочетает в себе изысканные геометрические формы хрусталя с легким металлическим каркасом, создавая потрясающую композицию в стиле современной элегантности.',
+      src: '/collections/Vine'
     },
     thirdText: {
       image: a1,
       title: 'Коллекция',
-      subtitle: 'FLOS',
+      subtitle: 'VEIL',
       description: 'British fashion pho                                                                                                                                                                                                                             tographer, documentary photographer, and web publisher',
+      src: '/collections/Veil'
     },
   };
 
