@@ -534,7 +534,7 @@ const FullWidth = ({ allData, allFilter }) => {
                   </ul>
                 </div>
               </div>
-              <div className="woocommerce__filtering-right">
+              {/* <div className="woocommerce__filtering-right">
                 <form action="#">
                   <input
                     placeholder="Type your keywords"
@@ -544,7 +544,7 @@ const FullWidth = ({ allData, allFilter }) => {
                     className="woocomerce__search"
                   />
                 </form>
-              </div>
+              </div> */}
             </div>
             <div className="woocomerce__filtering-mobwrapper">
               <span

@@ -34,7 +34,8 @@ const Contact2 = () => {
   const { rootState } = context;
   // console.log(rootState.cartData, 'context.rootState.cartData')
 
-const cart = rootState.cartData;
+const cart = JSON.parse(localStorage.getItem('cart'))
+// const cart = rootState.cartData;
 console.log(cart, 'context.rootState.cartData')
 
   // Я реализовал грамотную и удобную работу с формами, советую проанализировать и почитать про неподконтрольные инпуты

@@ -60,15 +60,15 @@ const ForDesDetails = () => {
               <div className="team__member-work">
                 <h4 className="work-title">Соц. сети :</h4>
                 <ul>
-                  <li>
+                  {/* <li>
                     <a href="#">Vk</a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="#">Tg</a>
+                    <a href="https://t.me/nazarettyLight">Tg</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">Inst</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

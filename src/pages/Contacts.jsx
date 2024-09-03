@@ -115,20 +115,20 @@ const About = () => {
             },
           });
 
-          const itemSplitted = new SplitText(splitTextLine, {
-            type: "words, lines",
-          });
-          gsap.set(splitTextLine, { perspective: 400 });
-          itemSplitted.split({ type: "lines" });
-          tl.from(itemSplitted.lines, {
-            duration: 1,
-            delay: 0.3,
-            opacity: 0,
-            rotationX: -80,
-            force3D: true,
-            transformOrigin: "top center -50",
-            stagger: 0.1,
-          });
+          // const itemSplitted = new SplitText(splitTextLine, {
+          //   type: "words, lines",
+          // });
+          // gsap.set(splitTextLine, { perspective: 400 });
+          // itemSplitted.split({ type: "lines" });
+          // tl.from(itemSplitted.lines, {
+          //   duration: 1,
+          //   delay: 0.3,
+          //   opacity: 0,
+          //   rotationX: -80,
+          //   force3D: true,
+          //   transformOrigin: "top center -50",
+          //   stagger: 0.1,
+          // });
         });
         let splitTextLines = gsap.utils.toArray(".text-anim p");
 
@@ -145,18 +145,18 @@ const About = () => {
             },
           });
 
-          const itemSplitted = new SplitText(splitTextLine, { type: "lines" });
-          gsap.set(splitTextLine, { perspective: 400 });
-          itemSplitted.split({ type: "lines" });
-          tl.from(itemSplitted.lines, {
-            duration: 1,
-            delay: 0.5,
-            opacity: 0,
-            rotationX: -80,
-            force3D: true,
-            transformOrigin: "top center -50",
-            stagger: 0.1,
-          });
+          // const itemSplitted = new SplitText(splitTextLine, { type: "lines" });
+          // gsap.set(splitTextLine, { perspective: 400 });
+          // itemSplitted.split({ type: "lines" });
+          // tl.from(itemSplitted.lines, {
+          //   duration: 1,
+          //   delay: 0.5,
+          //   opacity: 0,
+          //   rotationX: -80,
+          //   force3D: true,
+          //   transformOrigin: "top center -50",
+          //   stagger: 0.1,
+          // });
         });
       });
       return () => tHero.revert();

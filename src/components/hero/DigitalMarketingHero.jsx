@@ -28,7 +28,7 @@ const DigitalMarketingHero = () => {
             video.style.display = "none";
             videoClose.style.display = "block";
             video_start.classList.add("start-video");
-            document.querySelector(".header__area-3").classList.add("bg-white");
+            document.querySelector(".header__area-3")?.classList.add("bg-white");
           } else {
             document.querySelector(".wrapper").style.zIndex = "999";
             video.style.display = "block";
@@ -36,7 +36,7 @@ const DigitalMarketingHero = () => {
             video_start.classList.remove("start-video");
             document
               .querySelector(".header__area-3")
-              .classList.remove("bg-white");
+              ?.classList.remove("bg-white");
           }
         });
       }
@@ -84,8 +84,9 @@ const DigitalMarketingHero = () => {
                 </div>
                 <div className="hero__text-3">
                   <p className="hero__text-animation">
-                    {/* Вдохновляемся светом , создаем с любовью */}
-                    Премиальный бренд светильников
+                    Вдохновляемся природой ,
+                    <br /> создаем с любовью
+                    {/* Премиальный бренд светильников */}
                   </p>
                 </div>
                 <div className="scroll-down">
@@ -102,7 +103,8 @@ const DigitalMarketingHero = () => {
             </div>
           </div>
         </div>
-        <div className="wrapper">
+
+        {/* <div className="wrapper">
           <div className="video-info">
             <div className="video-intro">
               <input id="video_check" type="checkbox" />
@@ -125,7 +127,7 @@ const DigitalMarketingHero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="hero3-img-ani">
           <Image

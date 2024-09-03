@@ -1455,7 +1455,7 @@ main {
 
   &__item-4 {
     img {
-      width: 100%;
+      width: 100% !important;
     }
 
     &:hover {
@@ -1483,6 +1483,9 @@ main {
     line-height: 1.3;
     color: var(--black-2);
     padding-bottom: 5px;
+    @media(max-width: 767px) {
+      font-size: 15px;
+    }
   }
 
   &__subtitle-4 {

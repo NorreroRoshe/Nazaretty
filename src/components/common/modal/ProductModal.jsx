@@ -468,7 +468,7 @@ export default function ProductModal({ setModalShow, product }) {
     let fullData = {
       parent_id: data.parent_id,
       title: data.title,
-      img: data.img[0],
+      img: data.img,
       price: data.price,
       dis_price: data.dis_price,
       color: selectedColor,

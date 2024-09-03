@@ -292,9 +292,9 @@ const Index = () => {
     secondText: {
       image: a1,
       title: 'Коллекция',
-      subtitle: 'VINE',
+      subtitle: 'WISH',
       description: 'Эта утонченная коллекция сочетает в себе изысканные геометрические формы хрусталя с легким металлическим каркасом, создавая потрясающую композицию в стиле современной элегантности.',
-      src: '/collections/Vine'
+      src: '/collections/Wish'
     },
     thirdText: {
       image: a1,

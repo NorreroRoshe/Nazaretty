@@ -77,9 +77,9 @@ const ModernAgencyPortfolio = () => {
           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <div className="about8">
               <h2 className="about8__title fade_bottom_2">
-                Создаем <br /> <span>с любовью,</span> вдохновляемся<br />   
+                Создаем <br /> <span>свет,</span> вдохновляясь<br />   
                 <Link href="/about" className="hover_wrap">
-                  &nbsp;Светом
+                  &nbsp;Природой
                   <span
                     className="hover_img"
                     style={{

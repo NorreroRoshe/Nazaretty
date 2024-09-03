@@ -86,7 +86,9 @@ const DigitalMarketingBlog = () => {
             <div className="col-xxl-6 col-xl-6 col-lg-6">
               <article className="blog__item-3">
                 <div className="blog__img-wrapper-3">
-                  <Link href="/blog-details">
+                  <Link href="#"
+                    // /blog-details
+                  >
                     <div className="img-box">
                       <Image
                         priority
@@ -107,19 +109,22 @@ const DigitalMarketingBlog = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    28 Ноября 2023
+                    17 - 21 сентября 2023
                   </h4>
                   <h5>
-                    <Link href="/blog-details" className="blog__title-3">
-                      Выставка interlight 2024
+                    <Link 
+                    href="#"
+                    // href="/blog-details" 
+                    className="blog__title-3">
+                      Выставка interlight 2023
                     </Link>
                   </h5>
-                  <Link href="/blog-details" className="blog__btn">
+                  {/* <Link href="/blog-details" className="blog__btn">
                     Читать{" "}
                     <span>
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               </article>
             </div>
@@ -127,7 +132,9 @@ const DigitalMarketingBlog = () => {
             <div className="col-xxl-6 col-xl-6 col-lg-6">
               <article className="blog__item-3">
                 <div className="blog__img-wrapper-3">
-                  <Link href="/blog-details">
+                  <Link href="#"
+                  // /blog-details
+                  >
                     <div className="img-box">
                       <Image
                         priority
@@ -148,19 +155,22 @@ const DigitalMarketingBlog = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    28 Ноября 2023
+                    17 - 20 сентября 2024
                   </h4>
                   <h5>
-                    <Link href="/blog-details" className="blog__title-3">
+                    <Link 
+                    href="#"
+                    // href="/blog-details" 
+                    className="blog__title-3">
                       Выставка interlight 2024
                     </Link>
                   </h5>
-                  <Link href="/blog-details" className="blog__btn">
+                  {/* <Link href="/blog-details" className="blog__btn">
                     Читать{" "}
                     <span>
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               </article>
             </div>
