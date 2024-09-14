@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Brand1 from "../../../public/assets/imgs/brand/1.png";
-import Brand2 from "../../../public/assets/imgs/brand/2.png";
+import Brand2 from "../../../public/assets/imgs/brand/2.svg";
 import Brand3 from "../../../public/assets/imgs/brand/3.png";
 import Brand4 from "../../../public/assets/imgs/brand/4.png";
-import Brand5 from "../../../public/assets/imgs/brand/5.png";
-import Brand6 from "../../../public/assets/imgs/brand/6.png";
+import Brand5 from "../../../public/assets/imgs/brand/2.svg";
+import Brand6 from "../../../public/assets/imgs/brand/6.svg";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -72,7 +72,10 @@ const DigitalAgencyBrand = () => {
                     className="mobocqwcqwcqw"
                   />
                 </div>
-                <div className="brand__item fade_bottom">
+                <div
+                className="brand__item fade_bottom"
+                style={{background: '#000'}}
+                >
                   <Image
                     priority
                     width={121}
@@ -82,7 +85,7 @@ const DigitalAgencyBrand = () => {
                     className="mobocqwcqwcqw"
                   />
                 </div>
-                <div className="brand__item fade_bottom">
+                {/* <div className="brand__item fade_bottom">
                   <Image
                     priority
                     width={97}
@@ -101,7 +104,7 @@ const DigitalAgencyBrand = () => {
                     alt="Brand Logo"
                     className="mobocqwcqwcqw"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

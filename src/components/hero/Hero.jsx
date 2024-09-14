@@ -18,10 +18,10 @@ const Hero = ({ advertising }) => {
           alt="shape"
           className="woocomerce__hero-circle"
         />
-        <span className="woocomerce__hero-line line1"></span>
+        {/* <span className="woocomerce__hero-line line1"></span>
         <span className="woocomerce__hero-line line2"></span>
         <span className="woocomerce__hero-line line3"></span>
-        <span className="woocomerce__hero-line line4"></span>
+        <span className="woocomerce__hero-line line4"></span>  */}
         <div className="woocomerce-active">
           <Swiper
             modules={[Autoplay, EffectFade, Pagination, Navigation]}
@@ -65,7 +65,7 @@ const Hero = ({ advertising }) => {
                         {el.sub_title}
                       </span>
                       <strong className="woocomerce__hero-price">
-                        ${el.price}
+                        {/* ${el.price} */}
                       </strong>
                       <p className="woocomerce__hero-dis">{el.description}</p>
                     </div>

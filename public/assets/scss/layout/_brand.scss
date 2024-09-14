@@ -26,7 +26,7 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     // background-color: var(--white);
     border-bottom: 1px solid var(--white-3);
     position: relative;
@@ -34,15 +34,15 @@
     margin-left: 1px;
 
     @media #{$lg} {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @media #{$md} {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @media #{$sm} {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       // grid-template-columns: repeat(2, 1fr);
       margin-left: 0;
     }
@@ -90,7 +90,8 @@
     }
 
     @media #{$sm} {
-      padding: 30px 0;
+      // padding: 30px 0;
+      padding: 10px 0;
       border-left: 1px solid var(--white-3);
 
       &:nth-child(even) {

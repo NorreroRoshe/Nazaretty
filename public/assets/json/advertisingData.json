@@ -2,18 +2,10 @@
   "hero_advertising": [
     {
       "id": "101",
-      "title": "",
-      "description": "",
-      "sub_title": "Starts from",
-      "img": "woocomerce/exclusive/wocomerce-1.jpg",
-      "price": ""
-    },
-    {
-      "id": "103",
-      "title": "",
-      "description": "",
-      "sub_title": "Starts from",
-      "img": "woocomerce/exclusive/ex3.jpg",
+      "title": "Прикоснись к природе",
+      "description": "Компания Nazaretty: создаем уникальные люстры в органическом стиле. Воплотите свою связь с природой через авторский дизайн, отражающий красоту и гармонию естественных форм.",
+      "sub_title": "",
+      "img": "woocomerce/exclusive/1.jpg",
       "price": ""
     }
   ],

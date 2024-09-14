@@ -26,7 +26,9 @@ import {
   PortfolioSwiperServiseBet,
   StartupAgencyPortfolio,
 } from "@/components";
-import a1 from '../../public/assets/imgs/bg/4/solution-bg.png';
+import a11 from '../../public/assets/imgs/bg/4/11.jpg';
+import a12 from '../../public/assets/imgs/bg/4/12.jpg';
+import a14 from '../../public/assets/imgs/bg/4/13.jpg';
 import ProductLayout from "@/components/common/layout/ProductLayout";
 import { Power2, gsap } from "gsap";
 
@@ -283,21 +285,21 @@ const Index = () => {
   
   const solutionImages = {
     firstText: {
-      image: a1,
+      image: a11,
       title: 'Коллекция',
       subtitle: 'ICE',
       description: 'Эта утонченная коллекция сочетает в себе изысканные геометрические формы хрусталя с легким металлическим каркасом, создавая потрясающую композицию в стиле современной элегантности.',
       src: '/collections/Ice'
     },
     secondText: {
-      image: a1,
+      image: a12,
       title: 'Коллекция',
       subtitle: 'WISH',
       description: 'Эта утонченная коллекция сочетает в себе изысканные геометрические формы хрусталя с легким металлическим каркасом, создавая потрясающую композицию в стиле современной элегантности.',
       src: '/collections/Wish'
     },
     thirdText: {
-      image: a1,
+      image: a14,
       title: 'Коллекция',
       subtitle: 'VEIL',
       description: 'British fashion pho                                                                                                                                                                                                                             tographer, documentary photographer, and web publisher',

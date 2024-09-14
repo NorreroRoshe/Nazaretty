@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Portfolio41 from "../../../public/assets/imgs/portfolio/4/1.jpg";
-import Portfolio42 from "../../../public/assets/imgs/portfolio/4/2.jpg";
+import Portfolio41 from "../../../public/assets/imgs/portfolio/4/3.jpg";
+import Portfolio42 from "../../../public/assets/imgs/portfolio/4/4.jpg";
 import {
   Pagination,
   Navigation,
@@ -86,7 +86,7 @@ const StartupAgencyPortfolio = () => {
                 >
                   <SwiperSlide>
                     <div className="portfolio__item-4">
-                      <Link href="/portfolio">
+                      <div>
                         <div className="portfolio__item-inner">
                           <div className="portfolio__title-wrapper">
                             <h4 className="portfolio__title-4">
@@ -104,16 +104,16 @@ const StartupAgencyPortfolio = () => {
                         </div>
                         <Image
                           priority
-                          style={{ width: "auto", height: "auto" }}
+                          style={{ width: "auto", height: "700px" }}
                           src={Portfolio41}
                           alt="Portfolio Image"
                         />
-                      </Link>
+                      </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="portfolio__item-4">
-                      <Link href="/portfolio">
+                      <div>
                         <div className="portfolio__item-inner">
                           <div className="portfolio__title-wrapper">
                             <h4 className="portfolio__title-4">
@@ -131,14 +131,14 @@ const StartupAgencyPortfolio = () => {
                         </div>
                         <Image
                           priority
-                          style={{ width: "auto", height: "auto" }}
+                          style={{ width: "auto", height: "700px" }}
                           src={Portfolio42}
                           alt="Portfolio Image"
                         />
-                      </Link>
+                      </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide>
+                  {/* <SwiperSlide>
                     <div className="portfolio__item-4">
                       <Link href="/portfolio">
                         <div className="portfolio__item-inner">
@@ -164,8 +164,8 @@ const StartupAgencyPortfolio = () => {
                         />
                       </Link>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide>
                     <div className="portfolio__item-4">
                       <Link href="/portfolio">
                         <div className="portfolio__item-inner">
@@ -191,8 +191,8 @@ const StartupAgencyPortfolio = () => {
                         />
                       </Link>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide>
                     <div className="portfolio__item-4">
                       <Link href="/portfolio">
                         <div className="portfolio__item-inner">
@@ -218,8 +218,8 @@ const StartupAgencyPortfolio = () => {
                         />
                       </Link>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide>
                     <div className="portfolio__item-4">
                       <Link href="/portfolio">
                         <div className="portfolio__item-inner">
@@ -245,21 +245,21 @@ const StartupAgencyPortfolio = () => {
                         />
                       </Link>
                     </div>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
                 </Swiper>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container line_4 portfolio6__line">
+        {/* <div className="container line_4 portfolio6__line">
           <div className="line-col-4">
             <div></div>
             <div></div>
             <div></div>
             <div></div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

@@ -84,7 +84,7 @@ const ModernAgencyPortfolio = () => {
                     className="hover_img"
                     style={{
                       backgroundImage:
-                        "url(assets/imgs/portfolio/detail/7.jpg)",
+                        "url(assets/imgs/portfolio/detail/7.5.jpg)",
                     }}
                   ></span>
                 </Link>
