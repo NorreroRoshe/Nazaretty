@@ -77,9 +77,9 @@ const StartupAgencyFooter = () => {
                 <div className="footer__item-6">
                   <h2 className="footer__item-title">Конакты</h2>
                   <ul className="footer__info-6">
-                    <li>Улица Норика Батерфаяна, д. 31</li>
+                    {/* <li>Улица Норика Батерфаяна, д. 31</li> */}
                     <li>
-                      <a href="tel:02574328301" className="phone">
+                      <a href="tel:79645200022" className="phone">
                         +7&nbsp;(964) - 520 -0022
                       </a>
                     </li>
