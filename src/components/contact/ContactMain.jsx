@@ -165,7 +165,7 @@ const ContactMain = ({ contact }) => {
                 </h3>
                 <ul>
                 <li style={{display: 'flex', gap: '10px'}}>
-                  Телефон: <a href="tel:79999902020">+7 ( 999 ) 990 - 2020</a>
+                  Телефон: <a href="tel:79645200022">+7 (964) 520-00-22</a>
                 </li>
                 <li style={{display: 'flex', gap: '10px'}}>
                   <span>Почта:</span>
@@ -191,10 +191,10 @@ const ContactMain = ({ contact }) => {
                     <a className="pcf-social-a" href="https://www.instagram.com/chucknorrikk?igsh=MTlhdnkzNmRnOGNnYg==">insagram</a>
                   </li> */}
                   <li>
-                    <a className="pcf-social-a" href="https://t.me/Norikyujka">TeleGram</a>
+                    <a className="pcf-social-a" href="https://t.me/NAZARETTY">TeleGram</a>
                   </li>
                   <li>
-                    <a className="pcf-social-a" href="https://api.whatsapp.com/send?phone=79999902020">WhatsApp</a>
+                    <a className="pcf-social-a" href="https://api.whatsapp.com/send?phone=79645200022">WhatsApp</a>
                   </li>
                 </ul>
               {/* </div> */}

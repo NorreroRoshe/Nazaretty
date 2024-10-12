@@ -92,7 +92,7 @@ const DigitalMarketingService = () => {
                 </h3>
                 <p>
                   <div className='mb-10'>
-                  <span className='color-white'>Тел.:</span> <Link className='fwwh' href='tel:02094980547'>+7 (999) 990-20-20</Link>
+                  <span className='color-white'>Тел.:</span> <Link className='fwwh' href='tel:79645200022'>+7 (964) 520-00-22</Link>
                   </div>
                   <div className='mb-10'>
                   <span className='color-white'>Тел.:</span> <Link className='fwwh' href="mailto:info@nazaretty.ru">info@nazaretty.ru</Link>

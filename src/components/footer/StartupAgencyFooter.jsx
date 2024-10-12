@@ -80,7 +80,7 @@ const StartupAgencyFooter = () => {
                     <li>Улица Норика Батерфаяна, д. 31</li>
                     <li>
                       <a href="tel:02574328301" className="phone">
-                        +7&nbsp;(999) - 990 - 2020{" "}
+                        +7&nbsp;(964) - 520 -0022
                       </a>
                     </li>
                     <li>
